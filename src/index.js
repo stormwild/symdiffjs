@@ -28,7 +28,7 @@ app.innerHTML = `
 <div>
 <pre>
 <code>
-function sym(a, b) {
+function symdiff(a, b) {
   let c = [];
   for (let i = 0; i < a.length; i++) {
     if (b.indexOf(a[i]) === -1 && c.indexOf(a[i]) === -1) {
@@ -41,12 +41,12 @@ function sym(a, b) {
       c.push(b[i]);
     }
   }
-  // console.log(c);
+
   return c;
 }
 
-let result1 = sym([1, 2, 3], [5, 2, 1, 4]);
-let result2 = sym([1, 2, 3, 3], [5, 2, 1, 4]);
+let result1 = symdiff([1, 2, 3], [5, 2, 1, 4]);
+let result2 = symdiff([1, 2, 3, 3], [5, 2, 1, 4]);
 </code>
 </pre>
 </div>
