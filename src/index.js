@@ -64,6 +64,8 @@ app.innerHTML += `
 <br>
 <p>Better answers provided in the StackOverflow link such as:</p>
 <div><pre><code>
-let intersection = arr1.filter(x => arr2.includes(x));
+let difference = arr1
+                 .filter(x => !arr2.includes(x))
+                 .concat(arr2.filter(x => !arr1.includes(x)));
 </code></pre></div>
 `;
